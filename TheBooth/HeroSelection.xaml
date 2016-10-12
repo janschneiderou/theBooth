@@ -1,0 +1,30 @@
+﻿<UserControl xmlns:TheBooth="clr-namespace:TheBooth"  x:Class="TheBooth.HeroSelection"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:k="http://schemas.microsoft.com/kinect/2014"
+            
+             mc:Ignorable="d"  
+             
+             d:DesignHeight="800" d:DesignWidth="1200">
+    <k:KinectRegion x:Name="kinectRegion" Background="Transparent"  >
+        <Canvas>
+            <Image Name="backgroundIMG" Source="Images\SuperHeroBackground.png" Height="900" Width="1300" Stretch="Uniform"></Image>
+            <Image Height="196" Canvas.Left="224" Canvas.Top="75" Width="750" RenderTransformOrigin="0.76,0.486" Source="Images\logo.png"/>
+
+            <Button  Name="button1" Height="381" Canvas.Left="167" Canvas.Top="323" Width="257" Background="Transparent" MouseEnter="Button1_MouseEnter" MouseLeave="button1_MouseLeave" GotFocus="button1_GotFocus" >
+                <Image Name="button1Img" Source="Images\female_hero.png" />
+
+            </Button>
+            <Label Name="labeldebug" Content="Label"  Visibility="Collapsed" Height="101" Canvas.Left="488" Canvas.Top="301" Width="217" Foreground="AntiqueWhite" FontSize="50"/>
+            <Button  x:Name="button2" Height="381" Canvas.Left="768" Canvas.Top="323" Width="310" Background="Transparent" MouseEnter="Button1_MouseEnter" MouseLeave="button1_MouseLeave" GotFocus="button1_GotFocus" >
+                <Image x:Name="button2Img" Source="Images\male_hero.png" Stretch="Fill" />
+
+            </Button>
+
+            <Image Source="Images\text_startscreen_select.png" Canvas.Left="438" Canvas.Top="430" Height="190" Width="315"/>
+
+        </Canvas>
+    </k:KinectRegion>
+</UserControl>

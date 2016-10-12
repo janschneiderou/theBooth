@@ -1,0 +1,148 @@
+﻿<UserControl xmlns:TheBooth="clr-namespace:TheBooth"  x:Class="TheBooth.SuperHeroAffirmation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:k="http://schemas.microsoft.com/kinect/2014"
+             mc:Ignorable="d"  
+             d:DesignHeight="600" d:DesignWidth="900">
+    <k:KinectRegion x:Name="kinectRegion" Background="Transparent">
+        <Grid >
+            <Rectangle Fill="Gray" HorizontalAlignment="Left"
+		        Height="600" 
+		        Stroke="Black" StrokeThickness="5"
+		        VerticalAlignment="Top" Width="900"
+		        RadiusY="13.5" RadiusX="13.5" AllowDrop="True"/>
+            <Grid Name="superPosture" Visibility="Collapsed">
+                <Label Content="Lesson " HorizontalAlignment="Center" FontSize="35" Height="70" Margin="336,27,430,0" VerticalAlignment="Top" Width="134" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNumberPosture" Content="1" HorizontalAlignment="Left" FontSize="35" Height="70" Margin="488,27,0,0" VerticalAlignment="Top" Width="74" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNamePosture" Content="Posture" HorizontalAlignment="Left" Margin="266,128,0,0" VerticalAlignment="Top" Width="376" Height="76" FontSize="50" RenderTransformOrigin="2.091,0.489" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonExplanationPosture"  HorizontalAlignment="Center" Margin="58,366,213,0" VerticalAlignment="Top" Width="629" Height="93" FontSize="30"  FontFamily="Segoe WP Black" Foreground="White">
+                    <TextBlock>That's the Posture!<LineBreak/>don't you feel more powerful now?</TextBlock>
+                </Label>
+                <Image  Name="postureImage" HorizontalAlignment="Left" Height="361" Margin="594,169,0,0" VerticalAlignment="Top" Width="286" />
+                <Image  Name="postureCharacter" HorizontalAlignment="Left" Height="221" Margin="714,169,0,0" VerticalAlignment="Top" Width="156" Source="Images/male_hero_silhouette.png"/>
+            </Grid>
+            <Grid Name="superPowers" Visibility="Collapsed">
+                <Label Content="Lesson" HorizontalAlignment="Center" FontSize="35" Height="70" Margin="336,27,430,0" VerticalAlignment="Top" Width="134" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNumberPowers" Content="2" HorizontalAlignment="Left" FontSize="35" Height="70" Margin="488,27,0,0" VerticalAlignment="Top" Width="74" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNamePowers" Content="Super Powers" HorizontalAlignment="Left" Margin="267,110,0,0" VerticalAlignment="Top" Width="376" Height="76" FontSize="50" RenderTransformOrigin="2.091,0.489" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label  HorizontalAlignment="Center" Margin="37,209,234,0" VerticalAlignment="Top" Width="629" Height="238" FontSize="30"  FontFamily="Segoe WP Black" Foreground="White">
+                    <TextBlock>Imagine how you would <LineBreak/> move, stand and talk <LineBreak/> with your:<LineBreak/></TextBlock>
+                </Label>
+                <Label Name="LabelLessonExplanationPowers" HorizontalAlignment="Center" Margin="46,353,526,0" VerticalAlignment="Top" Width="328" Height="141" FontSize="30"  FontFamily="Segoe WP Black" Foreground="White">
+                    <TextBlock>super Intelligence<LineBreak/> super creativity <LineBreak/> super willpower<LineBreak/></TextBlock>
+                </Label>
+                <Image  Name="powerImage" HorizontalAlignment="Left" Height="361" Margin="539,191,0,0" VerticalAlignment="Top" Width="286" />
+                <Image  Name="powerCharacter" HorizontalAlignment="Left" Height="221" Margin="659,191,0,0" VerticalAlignment="Top" Width="156" Source="Images/male_hero_silhouette.png"/>
+            </Grid>
+            <Grid Name="superInspiration" Visibility="Collapsed">
+                <Label Content="Lesson" HorizontalAlignment="Center" FontSize="35" Height="70" Margin="336,27,430,0" VerticalAlignment="Top" Width="134" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNumberInspiration" Content="3" HorizontalAlignment="Left" FontSize="35" Height="70" Margin="488,27,0,0" VerticalAlignment="Top" Width="74" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNameInspiration" Content="Inspiration" HorizontalAlignment="Left" Margin="266,128,0,0" VerticalAlignment="Top" Width="376" Height="76" FontSize="50" RenderTransformOrigin="2.091,0.489" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonExplanationInspiration" Content="In this lesson you will learn the Super Hero Posture " HorizontalAlignment="Center" Margin="158,227,113,0" VerticalAlignment="Top" Width="629" Height="227" FontSize="30"  FontFamily="Segoe WP Black" Foreground="White"/>
+            </Grid>
+            <Grid Name="superImpact" Visibility="Visible">
+
+                <Label Content="Lesson" HorizontalAlignment="Center" FontSize="35" Height="70" Margin="336,27,430,0" VerticalAlignment="Top" Width="134" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNumberImpact" Content="4" HorizontalAlignment="Left" FontSize="35" Height="70" Margin="488,27,0,0" VerticalAlignment="Top" Width="74" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Canvas Name="source" Background="Gray"  HorizontalAlignment="Left" Height="403" Margin="10,86,0,0"    VerticalAlignment="Top" Width="846" >
+                    <Label Name="LabelLessonExplanationImpact"  HorizontalAlignment="Center"  VerticalAlignment="Top" Width="413" Height="58" FontSize="30"  FontFamily="Segoe WP Black" Foreground="White" Canvas.Left="13" Canvas.Top="10">
+                        <TextBlock>How would you use your:<LineBreak/></TextBlock>
+                    </Label>
+                    <Label Name="LabelLessonImpactPowers"  HorizontalAlignment="Left"  VerticalAlignment="Top" Width="382" Height="143"  FontSize="30"  FontFamily="Segoe WP Black" Foreground="White" Canvas.Left="13" Canvas.Top="68">
+                        <!--  <TextBlock Height="143">Super Intelligence<LineBreak/>
+                    Super Intelligence<LineBreak/>
+                    Super Intelligence<LineBreak/></TextBlock> -->
+                    </Label>
+                    <Label Name="LabelLessonImpact2" Content="to bring more:" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="382" Height="54"  FontSize="30"  FontFamily="Segoe WP Black" Foreground="White" Canvas.Top="199" Canvas.Left="13"/>
+                    <Label Name="LabelLessonImpactSelection"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="295" Height="131"  FontSize="30"  FontFamily="Segoe WP Black" Foreground="White" Canvas.Left="13" Canvas.Top="253">
+                        <!--<TextBlock Height="143">Super Intelligence<LineBreak/>
+                    Super Intelligence<LineBreak/>
+                    Super Intelligence<LineBreak/></TextBlock> -->
+                    </Label>
+                    <Image  Name="postureImpactImage" HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="286" Canvas.Left="550" Canvas.Top="10" />
+                    <Image  Name="postureImpactCharacter" HorizontalAlignment="Left" Height="222" VerticalAlignment="Top" Width="156" Source="Images/male_hero_silhouette.png" Canvas.Left="670" Canvas.Top="10"/>
+                    <Image  Name="postureImpactWorld" HorizontalAlignment="Left" Height="213" VerticalAlignment="Top" Width="204" Source="Images/World1.png" Canvas.Left="611" Canvas.Top="180"/>
+                </Canvas>
+
+
+
+
+            </Grid>
+            <Grid Name="superCelebration" Visibility="Collapsed">
+                <Label Content="Lesson" HorizontalAlignment="Center" FontSize="35" Height="70" Margin="336,27,430,0" VerticalAlignment="Top" Width="134" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNumberCelebration" Content="5" HorizontalAlignment="Left" FontSize="35" Height="70" Margin="488,27,0,0" VerticalAlignment="Top" Width="74" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonNameCelebration" Content="Celebration" HorizontalAlignment="Left" Margin="266,128,0,0" VerticalAlignment="Top" Width="376" Height="76" FontSize="50" RenderTransformOrigin="2.091,0.489" FontFamily="Segoe WP Black" Foreground="White"/>
+                <Label Name="LabelLessonExplanationCelebration" Content="In this lesson you will learn the Super Hero Posture" HorizontalAlignment="Center" Margin="158,227,113,0" VerticalAlignment="Top" Width="629" Height="227" FontSize="30"  FontFamily="Segoe WP Black" Foreground="White"/>
+            </Grid>
+
+            <Button Name="button1" FontSize="40" Foreground="White" Background="Transparent" HorizontalAlignment="Left" BorderBrush="Transparent" Margin="325,479,0,0" VerticalAlignment="Top" Width="192" Height="97" Click="Button_Click">
+                <Image Name="imgButton" Source="Images\Button_next.png" />
+            </Button>
+            <Image HorizontalAlignment="Left" Height="59" Margin="788,27,0,0" VerticalAlignment="Top" Source="Images/check-mark-512.gif" Width="77"/>
+
+            <MediaElement Name="lessonAudio" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Lesson.wav" Volume="1"/>
+            <MediaElement Name="AffirmationDescription1" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\AffirmationPosture.wav"/>
+            <MediaElement Name="AffirmationAudio1" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\One.wav" Volume="1"/>
+            <MediaElement Name="AffirmationDescription2" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\AffirmationPowers.wav" Volume="1"/>
+            <MediaElement Name="AffirmationDescription3a" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\AffirmationInspirationA1.wav" Volume="1"/>
+            <MediaElement Name="AffirmationDescription3b" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\AffirmationInspirationB.wav" Volume="1"/>
+            <MediaElement Name="AffirmationDescription4a" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\AffirmationWorldA.wav" Volume="1"/>
+            <MediaElement Name="AffirmationDescription4b" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\AffirmationWorldB.wav" Volume="1"/>
+
+            <MediaElement Name="AffirmationAudio2" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Two.wav" Volume="1"/>
+            <MediaElement Name="SelectionConfidence" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Confidence.wav"  Volume="1"/>
+            <MediaElement Name="SelectionWillpower" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Willpower.wav"  Volume="1"/>
+            <MediaElement Name="SelectionIntelligence" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Intelligence.wav"  Volume="1"/>
+            <MediaElement Name="SelectionCreativity" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Creativity.wav"  Volume="1"/>
+            <MediaElement Name="SelectionEmphaty" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Empathy.wav"  Volume="1"/>
+            <MediaElement Name="SelectionConcentration" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Concentration.wav"  Volume="1"/>
+            <MediaElement Name="SelectionPresence" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Presence.wav"  Volume="1"/>
+            <MediaElement Name="SelectionCharisma" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Charisma.wav"  Volume="1"/>
+            <MediaElement Name="SelectionMemory" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Memory.wav"  Volume="1"/>
+            <MediaElement Name="SelectionAssertivenes" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Assertiveness.wav"  Volume="1"/>
+            <MediaElement Name="SelectionFun" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Fun.wav"  Volume="1"/>
+            <MediaElement Name="SelectionDiscipline" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Dicipline.wav"  Volume="1"/>
+            <MediaElement Name="SelectionAttractiveness" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Attractiveness.wav"  Volume="1"/>
+            <MediaElement Name="SelectionPassion" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Passion.wav"  Volume="1"/>
+            <MediaElement Name="SelectionBalance" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Balance.wav"  Volume="1"/>
+            <MediaElement Name="SelectionFriendliness" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Friendliness.wav"  Volume="1"/>
+            <MediaElement Name="SelectionCourage" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Courage.wav"  Volume="1"/>
+            <MediaElement Name="SelectionAdaptability" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Adaptability.wav"  Volume="1"/>
+            <MediaElement Name="SelectionCharm" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Charm.wav"  Volume="1"/>
+            <MediaElement Name="SelectionBrightness" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Brightness.wav"  Volume="1"/>
+            <MediaElement Name="SelectionLoyalty" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Loyalty.wav"  Volume="1"/>
+            <MediaElement Name="SelectionHonesty" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Honesty.wav"  Volume="1"/>
+            <MediaElement Name="SelectionModesty" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Modesty.wav"  Volume="1"/>
+            <MediaElement Name="SelectionReliability" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Reliability.wav"  Volume="1"/>
+            <MediaElement Name="SelectionWittiness" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Wittiness.wav"  Volume="1"/>
+            <MediaElement Name="SelectionJustice" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Justice.wav"  Volume="1"/>
+            <MediaElement Name="SelectionClarity" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Clarity.wav"  Volume="1"/>
+            <MediaElement Name="SelectionUnderstanding" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Understanding.wav"  Volume="1"/>
+            <MediaElement Name="SelectionLove" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Love.wav"  Volume="1"/>
+            <MediaElement Name="SelectionPeace" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Peace.wav"  Volume="1"/>
+            <MediaElement Name="SelectionRespect" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Respect.wav"  Volume="1"/>
+            <MediaElement Name="SelectionAcceptance" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Acceptance.wav"  Volume="1"/>
+            <MediaElement Name="SelectionJoy" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Joy.wav"  Volume="1"/>
+            <MediaElement Name="SelectionKindness" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Kindness.wav"  Volume="1"/>
+
+            <MediaElement Name="SelectionPowers1" Width="100" Height="100" LoadedBehavior="Manual" IsEnabled="False"  Volume="1"/>
+            <MediaElement Name="SelectionPowers2" Width="100" Height="100" LoadedBehavior="Manual" IsEnabled="False" Volume="1"/>
+            <MediaElement Name="SelectionPowers3" Width="100" Height="100" LoadedBehavior="Manual"  IsEnabled="False" Volume="1"/>
+            <MediaElement Name="SelectionInspiration1" Width="100" Height="100" LoadedBehavior="Manual"  IsEnabled="False" Volume="1"/>
+            <MediaElement Name="SelectionWorld1" Width="100" Height="100" LoadedBehavior="Manual"  IsEnabled="False" Volume="1"/>
+            <MediaElement Name="SelectionWorld2" Width="100" Height="100" LoadedBehavior="Manual"  IsEnabled="False" Volume="1"/>
+            <MediaElement Name="SelectionWorld3" Width="100" Height="100" LoadedBehavior="Manual"  IsEnabled="False" Volume="1"/>
+
+            <MediaElement Name="SuperSound" Width="100" Height="100" LoadedBehavior="Manual" Source="Sounds\Super.wav" Volume="1"/>
+
+
+        </Grid>
+
+
+
+
+
+    </k:KinectRegion>
+</UserControl>

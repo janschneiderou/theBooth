@@ -1,0 +1,250 @@
+﻿<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <tag>FORWARD</tag>
+        <one-of>
+          <item> forwards </item>
+          <item> forward </item>
+          <item> straight </item>
+        </one-of>
+      </item>
+   
+      <item>
+        <tag>CONFIDENCE</tag>
+        <one-of>
+          <item> confidence </item>
+          <item> super confidence </item>
+          <item> super confident </item>
+          <item>  confident </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>WILLPOWER</tag>
+        <one-of>
+          <item> willpower </item>
+          <item> super willpower </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>INTELLIGENCE</tag>
+        <one-of>
+          <item> intelligence </item>
+          <item> super intelligence </item>
+          <item> super intelligent </item>
+          <item>  intelligent </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CREATIVITY</tag>
+        <one-of>
+          <item> creativity </item>
+          <item> super creativity </item>
+          <item> super creative </item>
+          <item> creative </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>EMPHATY</tag>
+        <one-of>
+          <item> empathy </item>
+          <item> super empathy </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CONCENTRATION</tag>
+        <one-of>
+          <item> concentration </item>
+          <item> super concentration </item>
+        </one-of>
+      </item>
+      
+        <item>
+          <tag>PRESENCE</tag>
+          <one-of>
+            <item> presence </item>
+            <item> super presence </item>
+          </one-of>
+        </item>
+        <item>
+        <tag>CHARISMA</tag>
+        <one-of>
+          <item> charisma </item>
+          <item> super charisma </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>MEMORY</tag>
+        <one-of>
+          <item> memory </item>
+          <item> super memory </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>ASSERTIVENESS</tag>
+        <one-of>
+          <item> assertiveness </item>
+          <item> super assertiveness </item>
+          <item> super assertive </item>
+          <item> assertive </item>
+        </one-of>
+      </item>
+
+      <item>
+        <tag>JUSTICE</tag>
+        <one-of>
+          <item> justice </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CLARITY</tag>
+        <one-of>
+          <item> clarity </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>PASSION</tag>
+        <one-of>
+          <item> passion </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>UNDERSTANDING</tag>
+        <one-of>
+          <item> understanding </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>LOVE</tag>
+        <one-of>
+          <item> love </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>PEACE</tag>
+        <one-of>
+          <item> peace </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>RESPECT</tag>
+        <one-of>
+          <item> respect </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>ACCEPTANCE</tag>
+        <one-of>
+          <item> acceptance </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>JOY</tag>
+        <one-of>
+          <item> joy </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>KINDNESS</tag>
+        <one-of>
+          <item> kindess </item>
+          <item> kind </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>FRIENDLINESS</tag>
+        <one-of>
+          <item> friendliness </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>FUN</tag>
+        <one-of>
+          <item> fun </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>DISCIPLINE</tag>
+        <one-of>
+          <item> Discipline </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>COURAGE</tag>
+        <one-of>
+          <item> Courage </item>
+          <item> Courach </item>
+          <item> Courag </item>
+          <item> Corage </item>
+          <item> Corag </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>FLEXIBILITY</tag>
+        <one-of>
+          <item> Flexibility </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>CHARM</tag>
+        <one-of>
+          <item> Charm </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>BRIGHTNESS</tag>
+        <one-of>
+          <item> Brightness </item>
+        </one-of>
+      </item>
+      <item>
+      <tag>HONESTY</tag>
+      <one-of>
+        <item> Honesty </item>
+      </one-of>
+      </item>
+      <item>
+        <tag>WITTINESS</tag>
+        <one-of>
+          <item> Wittiness </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>RELIABILITY</tag>
+        <one-of>
+          <item> Reliability </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>MODESTY</tag>
+        <one-of>
+          <item> Modesty </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>LOYALTY</tag>
+        <one-of>
+          <item> Loyalty </item>
+        </one-of>
+      </item>
+      
+
+      <item>
+        <tag>NEXT</tag>
+        <one-of>
+          <item> next </item>
+        </one-of>
+      </item>
+
+      <item>
+        <tag>START</tag>
+        <one-of>
+          <item> start </item>
+          <item> star </item>
+          <item> stard </item>
+        </one-of>
+      </item>
+      
+    </one-of>
+  </rule>
+</grammar>
